@@ -2,8 +2,10 @@ import * as React from 'react';
 import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
 import dayjs from 'dayjs';
+import momentjs from 'momentjs';
 
 export default function Variants() {
+  console.log(momentjs());
   return (
     <div>
       {dayjs().format()}
