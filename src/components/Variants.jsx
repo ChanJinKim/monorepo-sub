@@ -2,13 +2,15 @@ import * as React from 'react';
 import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
 import dayjs from 'dayjs';
-import momentjs from 'momentjs';
+import moment from 'moment';
 
 export default function Variants() {
-  console.log(momentjs());
   return (
     <div>
       {dayjs().format()}
+      <br />
+      {moment().toLocaleString()}
+      <br />
       <Stack spacing={1}>
         <Skeleton variant="text" />
         <Skeleton variant="circular" width={40} height={40} />
